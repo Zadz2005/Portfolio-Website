@@ -8,40 +8,39 @@ import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyle
 const Header = () =>  (
   <Container>
     <Div1>
-        <Link href="/" passHref legacyBehavior>
-          <a style={{ display: 'flex', alignItems: 'center', color:"white" }}>
-            <DiCssdeck size="3rem" /> <span>Portfolio</span>
-          </a>
-        </Link>
+      <Link 
+  href="/" 
+  style={{ display: 'flex', alignItems: 'center', color: "white", marginTop: '5px' }}
+>
+  <DiCssdeck size="3rem" /> 
+  <span>Portfolio</span>
+</Link>
+
     </Div1>
     <Div2>
       <li>
-          <Link href="#projects" passHref legacyBehavior>
-            <NavLink>Projects</NavLink>
-          </Link>
+        <Link href="#projects" passHref legacyBehavior>
+          <NavLink>Projects</NavLink>
+        </Link>
       </li>
       <li>
-          <Link href="#tech" passHref legacyBehavior>
-            <NavLink>Technologies</NavLink>
-          </Link>
+        <Link href="#tech" passHref legacyBehavior>
+          <NavLink>Technologies</NavLink>
+        </Link>
       </li>        
       <li>
-          <Link href="#about" passHref legacyBehavior>
-            <NavLink>About</NavLink>
-          </Link>
-      </li>        
-    </Div2>
-      <Div3>
-        <SocialIcons href="https://google.com">
+        <Link href="#about" passHref legacyBehavior>
+      
+          <NavLink>About</NavLink>
+        </Link>
+      </li>
+      <li>
+      <SocialIcons href="https://google.com">
           <AiFillGithub size="3rem" />
         </SocialIcons>
-        <SocialIcons href="https://google.com">
-          <AiFillLinkedin size="3rem" />
-        </SocialIcons>
-        <SocialIcons href="https://google.com">
-          <AiFillInstagram size="3rem"/>
-        </SocialIcons>
-      </Div3>
+      </li>
+    </Div2>
+      
     </Container>
 );
 
